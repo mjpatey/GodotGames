@@ -1,0 +1,53 @@
+extends Node2D
+
+var rng = RandomNumberGenerator.new()
+var LocalPlopMan = preload("res://Scenes/PlopMan.tscn")
+var level_cleared = false
+var WorldName="World1"
+var newploppy = false
+onready var PlayerSpawn = $Player.position #This will set player spawn/respawn location to wherever he's hand-placed in the level
+
+func _ready():
+
+#	pass
+	rng.randomize()
+	var waitstart = rng.randf_range(3.0, 6.25)
+#	print (waitstart)
+	yield(get_tree().create_timer(waitstart), "timeout")
+	var LocalPlopManInstance = LocalPlopMan.instance()
+	self.add_child(LocalPlopManInstance)
+#	$Gold.WorldName = WorldName
+
+
+
+	
+func _process(delta):
+	if get_tree().get_nodes_in_group("Pickup").size() == 0:
+		level_cleared = true
+
+	if level_cleared == true:
+		print("Level Clear!")
+		get_tree().change_scene("res://Scenes/World2.tscn")
+
+		level_cleared = false
+		
+	#Add this if you want to spawn one new PlopMan at 100 pts:
+	
+#	if int($GUI/Score/Value.text) > 900 and newploppy == false:
+#		var LocalPlopManInstance = LocalPlopMan.instance()
+#		self.add_child(LocalPlopManInstance)
+#		newploppy = true
+		
+	
+func GotCoin():
+	$GUI/Score.adjust(100)
+	$GUI/Score.GoodFlash()
+#	print("PlopMan Instance ID is ",get_instance_id())
+
+func PlayerHit():
+	if int($GUI/Score/Value.text) > 0:
+		$GUI/Score.adjust(-100)
+		$GUI/Score.BadFlash()
+
+
+	

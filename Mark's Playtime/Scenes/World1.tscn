@@ -1,0 +1,403 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scenes/Gold.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Ladder+Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/BlueBox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/HalfWall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/World1.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/Ladder.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/WheeWhistler.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/WheeWhistler_REVERSE.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/JumpmanBG1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/SlidingDoorAnim.tscn" type="PackedScene" id=14]
+
+[node name="World1" type="Node2D"]
+position = Vector2( -144, -8 )
+script = ExtResource( 6 )
+
+[node name="GUI" parent="." instance=ExtResource( 11 )]
+position = Vector2( -50, 8 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 503, 352 )
+z_index = 5
+collision_mask = 29
+
+[node name="Wall3" parent="." instance=ExtResource( 8 )]
+position = Vector2( -80, -8 )
+z_index = 1
+
+[node name="BlueBox" parent="." instance=ExtResource( 4 )]
+
+[node name="JumpmanBG1" parent="." instance=ExtResource( 12 )]
+position = Vector2( 144.023, 8.03315 )
+
+[node name="Gold" parent="." instance=ExtResource( 1 )]
+position = Vector2( 544, 440 )
+z_index = 5
+
+[node name="Gold2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 728, 232 )
+z_index = 5
+
+[node name="Gold3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 808, 408 )
+z_index = 5
+
+[node name="Gold4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1120, 336 )
+z_index = 5
+
+[node name="Gold5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1120, 233 )
+z_index = 5
+
+[node name="Gold6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1120, 128 )
+z_index = 5
+
+[node name="Gold7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 728, 53 )
+z_index = 5
+
+[node name="Gold19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 528, 56 )
+z_index = 5
+
+[node name="Gold17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 176, 168 )
+z_index = 5
+
+[node name="Gold16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 912, 240 )
+z_index = 5
+
+[node name="Gold11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 224, 40 )
+z_index = 5
+
+[node name="Gold8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 376, 128 )
+z_index = 5
+
+[node name="Gold12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 248, 440 )
+z_index = 5
+
+[node name="Gold14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1120, 440 )
+z_index = 5
+
+[node name="Gold15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1119.43, 24 )
+z_index = 5
+
+[node name="Gold10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 224, 328 )
+z_index = 5
+
+[node name="Gold9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 376, 232 )
+z_index = 5
+
+[node name="Gold13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 424, 376 )
+z_index = 5
+
+[node name="Gold18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 176, 544 )
+z_index = 5
+
+[node name="Ladder2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 416, 144 )
+z_index = 2
+
+[node name="Ladder4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 416, 208 )
+z_index = 2
+
+[node name="Ladder21" parent="." instance=ExtResource( 7 )]
+position = Vector2( 184, 344 )
+z_index = 2
+
+[node name="Ladder15" parent="." instance=ExtResource( 7 )]
+position = Vector2( 184, 408 )
+z_index = 2
+
+[node name="Ladder18" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1151.43, 456 )
+z_index = 2
+
+[node name="Ladder17" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1151.43, 520 )
+z_index = 2
+
+[node name="Ladder20" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1151.43, 40 )
+z_index = 2
+
+[node name="Ladder19" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1151.43, 104 )
+z_index = 2
+
+[node name="Wall10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 712, 272 )
+z_index = 1
+
+[node name="Wall19" parent="." instance=ExtResource( 8 )]
+position = Vector2( 728, 160 )
+z_index = 1
+
+[node name="Wall22" parent="." instance=ExtResource( 8 )]
+position = Vector2( 176, 208 )
+z_index = 1
+
+[node name="Wall21" parent="." instance=ExtResource( 8 )]
+position = Vector2( 224, 80 )
+z_index = 1
+
+[node name="Wall32" parent="." instance=ExtResource( 8 )]
+position = Vector2( 808, 448 )
+z_index = 1
+
+[node name="Wall11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1120, 168 )
+z_index = 1
+
+[node name="Wall30" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1152, 168 )
+z_index = 1
+
+[node name="Wall34" parent="." instance=ExtResource( 8 )]
+position = Vector2( 368, 168 )
+z_index = 1
+
+[node name="Wall33" parent="." instance=ExtResource( 8 )]
+position = Vector2( 464, 168 )
+z_index = 1
+
+[node name="Wall63" parent="." instance=ExtResource( 8 )]
+position = Vector2( 200, 480 )
+z_index = 1
+
+[node name="Wall62" parent="." instance=ExtResource( 8 )]
+position = Vector2( 248, 480 )
+z_index = 1
+
+[node name="Wall67" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1087.43, 480 )
+z_index = 1
+
+[node name="Wall66" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1103.43, 480 )
+z_index = 1
+
+[node name="Wall69" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1104, 64 )
+z_index = 1
+
+[node name="Wall43" parent="." instance=ExtResource( 8 )]
+position = Vector2( 384, 272 )
+z_index = 1
+
+[node name="Wall35" parent="." instance=ExtResource( 8 )]
+position = Vector2( 432, 272 )
+z_index = 1
+
+[node name="Wall65" parent="." instance=ExtResource( 8 )]
+position = Vector2( 408, 416 )
+z_index = 1
+
+[node name="Wall64" parent="." instance=ExtResource( 8 )]
+position = Vector2( 440, 416 )
+z_index = 1
+
+[node name="Wall12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1120, 272 )
+z_index = 1
+
+[node name="Wall13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1152, 272 )
+z_index = 1
+
+[node name="Wall45" parent="." instance=ExtResource( 8 )]
+position = Vector2( 656, 352 )
+z_index = 1
+
+[node name="Wall61" parent="." instance=ExtResource( 8 )]
+position = Vector2( 560, 352 )
+z_index = 1
+
+[node name="Wall49" parent="." instance=ExtResource( 8 )]
+position = Vector2( 560, 480 )
+z_index = 1
+
+[node name="Wall41" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1056, 376 )
+z_index = 1
+
+[node name="Wall31" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1104, 376 )
+z_index = 1
+
+[node name="Wall42" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1152, 376 )
+z_index = 1
+
+[node name="Wall36" parent="." instance=ExtResource( 8 )]
+position = Vector2( 232, 368 )
+z_index = 1
+
+[node name="Wall46" parent="." instance=ExtResource( 8 )]
+position = Vector2( 280, 368 )
+z_index = 1
+
+[node name="Wall51" parent="." instance=ExtResource( 8 )]
+position = Vector2( 176, 584 )
+z_index = 1
+
+[node name="Wall37" parent="." instance=ExtResource( 8 )]
+position = Vector2( 240, 584 )
+z_index = 1
+
+[node name="Wall38" parent="." instance=ExtResource( 8 )]
+position = Vector2( 272, 584 )
+z_index = 1
+
+[node name="Wall50" parent="." instance=ExtResource( 8 )]
+position = Vector2( 368, 584 )
+z_index = 1
+
+[node name="Wall53" parent="." instance=ExtResource( 8 )]
+position = Vector2( 400, 584 )
+z_index = 1
+
+[node name="Wall52" parent="." instance=ExtResource( 8 )]
+position = Vector2( 496, 584 )
+z_index = 1
+
+[node name="Wall55" parent="." instance=ExtResource( 8 )]
+position = Vector2( 560, 584 )
+z_index = 1
+
+[node name="Wall60" parent="." instance=ExtResource( 8 )]
+position = Vector2( 784, 584 )
+z_index = 1
+
+[node name="Wall59" parent="." instance=ExtResource( 8 )]
+position = Vector2( 832, 584 )
+z_index = 1
+
+[node name="Wall58" parent="." instance=ExtResource( 8 )]
+position = Vector2( 896, 584 )
+z_index = 1
+
+[node name="Wall57" parent="." instance=ExtResource( 8 )]
+position = Vector2( 960, 584 )
+z_index = 1
+
+[node name="Wall40" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1024, 584 )
+z_index = 1
+
+[node name="Wall54" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1088, 584 )
+z_index = 1
+
+[node name="Wall56" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1152, 584 )
+z_index = 1
+
+[node name="Wall39" parent="." instance=ExtResource( 8 )]
+position = Vector2( 608, 584 )
+z_index = 1
+
+[node name="Ladder3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608, 520 )
+z_index = 2
+
+[node name="Ladder7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608, 440 )
+z_index = 2
+
+[node name="Ladder16" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608, 408 )
+z_index = 2
+
+[node name="Ladder8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608, 328 )
+z_index = 2
+
+[node name="Ladder13" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 296 )
+z_index = 2
+
+[node name="Ladder12" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 248 )
+z_index = 2
+
+[node name="Ladder11" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 200 )
+z_index = 2
+
+[node name="Ladder10" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 104 )
+z_index = 2
+
+[node name="Ladder14" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 56 )
+z_index = 2
+
+[node name="Ladder9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 272, 152 )
+z_index = 2
+
+[node name="Ladder+Wall" parent="." instance=ExtResource( 3 )]
+position = Vector2( 608, 352 )
+
+[node name="Ladder+Wall7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1151.43, 64 )
+
+[node name="Ladder+Wall6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1151.43, 480 )
+
+[node name="Ladder+Wall3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 184, 368 )
+
+[node name="Ladder+Wall5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 272, 80 )
+
+[node name="Ladder+Wall4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 416, 168 )
+
+[node name="Ladder+Wall2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 608, 480 )
+
+[node name="HalfWall" parent="." instance=ExtResource( 5 )]
+position = Vector2( 640, 480 )
+
+[node name="HalfWall4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 760, 272 )
+
+[node name="HalfWall6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1184, 64 )
+
+[node name="HalfWall2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 304, 80 )
+
+[node name="HalfWall3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 144, 368 )
+
+[node name="HalfWall5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 152, 368 )
+
+[node name="WheeWhistler" parent="." instance=ExtResource( 9 )]
+position = Vector2( 184, 112 )
+
+[node name="WheeWhistler_REVERSE" parent="." instance=ExtResource( 10 )]
+
+[node name="SlidingDoorAnim" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1075, 215 )

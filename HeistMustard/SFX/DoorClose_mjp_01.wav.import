@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DoorClose_mjp_01.wav-316f1a086b3d12f594f3bb471f36890f.sample"
+
+[deps]
+
+source_file="res://SFX/DoorClose_mjp_01.wav"
+dest_files=[ "res://.import/DoorClose_mjp_01.wav-316f1a086b3d12f594f3bb471f36890f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

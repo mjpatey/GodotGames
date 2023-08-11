@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Jumpman_Footstep1Shot_B.ogg-fe877c8ea464db8a1f00ec6a03fd0bc9.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Jumpman_Footstep1Shot_B.ogg"
+dest_files=[ "res://.import/Jumpman_Footstep1Shot_B.ogg-fe877c8ea464db8a1f00ec6a03fd0bc9.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

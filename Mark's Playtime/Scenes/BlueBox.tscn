@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/ColorRect.gd" type="Script" id=1]
+
+[node name="BlueBox" type="ColorRect"]
+show_behind_parent = true
+margin_left = 128.0
+margin_top = -16.0
+margin_right = 1184.0
+margin_bottom = 640.0
+color = Color( 0.0117647, 0.0117647, 0.258824, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

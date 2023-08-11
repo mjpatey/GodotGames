@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Plopman_Jump.ogg-2dd6fe428e869816fc4689371b4efa81.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Plopman/Plopman_Jump.ogg"
+dest_files=[ "res://.import/Plopman_Jump.ogg-2dd6fe428e869816fc4689371b4efa81.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

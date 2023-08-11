@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Plopman_Breath01.ogg-66947f0849f9bf6f6820ae5e78e92a2a.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Plopman/Plopman_Breath01.ogg"
+dest_files=[ "res://.import/Plopman_Breath01.ogg-66947f0849f9bf6f6820ae5e78e92a2a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

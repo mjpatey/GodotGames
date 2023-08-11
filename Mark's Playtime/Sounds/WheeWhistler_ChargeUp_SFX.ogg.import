@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/WheeWhistler_ChargeUp_SFX.ogg-a3235cfbd7ab062a046ccf47cd383efb.oggstr"
+
+[deps]
+
+source_file="res://Sounds/WheeWhistler_ChargeUp_SFX.ogg"
+dest_files=[ "res://.import/WheeWhistler_ChargeUp_SFX.ogg-a3235cfbd7ab062a046ccf47cd383efb.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

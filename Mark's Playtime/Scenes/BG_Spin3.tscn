@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/ColorRect2.gd" type="Script" id=1]
+
+[node name="BG_Spin3" type="ColorRect"]
+show_behind_parent = true
+margin_left = -679.431
+margin_top = -615.218
+margin_right = 420.569
+margin_bottom = 529.782
+rect_rotation = -61.9
+rect_pivot_offset = Vector2( 500, 500 )
+color = Color( 0, 0, 0.368627, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

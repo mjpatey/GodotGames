@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Plopman_Land.ogg-faf2e404529bc3c84827f542a38b476b.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Plopman/Plopman_Land.ogg"
+dest_files=[ "res://.import/Plopman_Land.ogg-faf2e404529bc3c84827f542a38b476b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

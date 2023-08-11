@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Missile_HitsPlayer_Sound.ogg-dc907bfc6a4ffa09cd703953a49b04e2.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Missile_HitsPlayer_Sound.ogg"
+dest_files=[ "res://.import/Missile_HitsPlayer_Sound.ogg-dc907bfc6a4ffa09cd703953a49b04e2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

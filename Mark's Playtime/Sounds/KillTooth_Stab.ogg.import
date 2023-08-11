@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/KillTooth_Stab.ogg-b4c79023909f27b3a213062504859886.oggstr"
+
+[deps]
+
+source_file="res://Sounds/KillTooth_Stab.ogg"
+dest_files=[ "res://.import/KillTooth_Stab.ogg-b4c79023909f27b3a213062504859886.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

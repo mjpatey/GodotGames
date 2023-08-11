@@ -1,0 +1,135 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Scripts/PlopMan.gd" type="Script" id=1]
+[ext_resource path="res://Images/PlopMan_Head- Purple longerer.png" type="Texture" id=2]
+[ext_resource path="res://Sounds/Plopman/Plopman_Idle.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/Plopman/Plopman_Jump.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/Plopman/Plopman_LandingSound+Thud+Juice_2.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/Plopman/Plopman_Boing.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/Plopman/PlopMan_HitSound_LessAttack.ogg" type="AudioStream" id=7]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 19.0
+height = 26.0
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 192, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 27.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=15]
+radius = 12.0
+height = 32.0
+
+[sub_resource type="CapsuleShape2D" id=16]
+radius = 9.0
+height = 46.0
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+z_index = 3
+script = ExtResource( 1 )
+startpos = Vector2( 896, 500 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -19 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 14 )
+frame = 9
+offset = Vector2( 0, -32 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.5
+autostart = true
+
+[node name="TopCollider" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, -38 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopCollider"]
+position = Vector2( 0, 6 )
+rotation = 1.5708
+shape = SubResource( 15 )
+
+[node name="IdleSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -6.0
+
+[node name="JumpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 3.5
+
+[node name="LandingSound" type="AudioStreamPlayer" parent="." groups=[
+"Enemy",
+]]
+stream = ExtResource( 5 )
+volume_db = 3.0
+
+[node name="BoingSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="BottomCollider" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomCollider"]
+position = Vector2( 0, -11 )
+rotation = 1.5708
+shape = SubResource( 16 )
+
+[node name="HitSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -4.0
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

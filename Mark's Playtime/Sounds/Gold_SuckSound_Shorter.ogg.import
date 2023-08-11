@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Gold_SuckSound_Shorter.ogg-adfcc8e95cf1f4f22eacf3bf05ccdd4e.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Gold_SuckSound_Shorter.ogg"
+dest_files=[ "res://.import/Gold_SuckSound_Shorter.ogg-adfcc8e95cf1f4f22eacf3bf05ccdd4e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://iqa5ws3h75sa"]
+
+[ext_resource type="Texture2D" uid="uid://bpxwc02mk5nrs" path="res://Sprites/Asteroid1.svg" id="1_ixw12"]
+[ext_resource type="Script" path="res://Scripts/Asteroid1.gd" id="1_wqrpn"]
+
+[node name="Asteroid1" type="Area2D"]
+modulate = Color(5.29, 8.24, 96.77, 1)
+script = ExtResource("1_wqrpn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ixw12")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-51, -78, 1, -61, 42, -78, 92, -9, 44, 78, -47, 56, -42, -13, -92, -20)

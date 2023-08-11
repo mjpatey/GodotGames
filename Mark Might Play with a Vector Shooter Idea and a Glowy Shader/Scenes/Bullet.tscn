@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://okalequkxjdm"]
+
+[ext_resource type="Script" path="res://Scripts/Bullet.gd" id="1_o7rsr"]
+[ext_resource type="Texture2D" uid="uid://b6o1e77kshqs3" path="res://Sprites/Bullet.png" id="2_at7p3"]
+[ext_resource type="AudioStream" uid="uid://de22khys43mp2" path="res://Sounds/fire.wav" id="3_ge57b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fn380"]
+size = Vector2(8, 8)
+
+[node name="Bullet" type="Area2D" groups=["Bullet"]]
+script = ExtResource("1_o7rsr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.784314, 0.886275, 1, 1)
+position = Vector2(20, 2)
+texture = ExtResource("2_at7p3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 2)
+shape = SubResource("RectangleShape2D_fn380")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ge57b")
+volume_db = -3.0
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

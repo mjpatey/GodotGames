@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Plopman_LandingSound+Thud+Juice.ogg-0590a4e3911a1a24f36c8bbd0d1b290c.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Plopman/Plopman_LandingSound+Thud+Juice.ogg"
+dest_files=[ "res://.import/Plopman_LandingSound+Thud+Juice.ogg-0590a4e3911a1a24f36c8bbd0d1b290c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

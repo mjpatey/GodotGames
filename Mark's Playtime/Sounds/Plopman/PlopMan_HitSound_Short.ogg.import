@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PlopMan_HitSound_Short.ogg-5fd43e7ab360509d4237a68842065795.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Plopman/PlopMan_HitSound_Short.ogg"
+dest_files=[ "res://.import/PlopMan_HitSound_Short.ogg-5fd43e7ab360509d4237a68842065795.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

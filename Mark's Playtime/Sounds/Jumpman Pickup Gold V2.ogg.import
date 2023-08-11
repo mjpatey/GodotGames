@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Jumpman Pickup Gold V2.ogg-2eba1602900db416fc9450685c8acd00.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Jumpman Pickup Gold V2.ogg"
+dest_files=[ "res://.import/Jumpman Pickup Gold V2.ogg-2eba1602900db416fc9450685c8acd00.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

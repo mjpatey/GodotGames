@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://dexr7n1mlcrhh"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_td01d"]
+[ext_resource type="Texture2D" uid="uid://dmfu7o685rdxk" path="res://Sprites/VectorShip_Simple_Thick.png" id="2_cyqlx"]
+[ext_resource type="Texture2D" uid="uid://c2nnmdla1egp1" path="res://Sprites/Thrusty.png" id="3_yaaf2"]
+[ext_resource type="AudioStream" uid="uid://bxq61evuac8b0" path="res://Sounds/ThrustyRumble.wav" id="4_wsxsr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6mdva"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yaaf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yaaf2")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+modulate = Color(0.478431, 0.72549, 1, 1)
+script = ExtResource("1_td01d")
+
+[node name="ShipSprite" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_cyqlx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(29, 0, -25, 20, -25, -20)
+
+[node name="Gun" type="Marker2D" parent="."]
+position = Vector2(38, 0)
+
+[node name="ThrustAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(-20, 0)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_6mdva")
+autoplay = "default"
+frame_progress = 0.656224
+speed_scale = 2.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wsxsr")

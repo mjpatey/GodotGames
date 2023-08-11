@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/JumpmanLadderFeetMedium.ogg-139cc5e4cfdd7d75407199a7f5889255.oggstr"
+
+[deps]
+
+source_file="res://Sounds/JumpmanLadderFeetMedium.ogg"
+dest_files=[ "res://.import/JumpmanLadderFeetMedium.ogg-139cc5e4cfdd7d75407199a7f5889255.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

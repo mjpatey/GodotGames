@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/JumpmanWalkLoFi.ogg-c2d470b04d15e1e01d4103cb6a344502.oggstr"
+
+[deps]
+
+source_file="res://Sounds/JumpmanWalkLoFi.ogg"
+dest_files=[ "res://.import/JumpmanWalkLoFi.ogg-c2d470b04d15e1e01d4103cb6a344502.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
